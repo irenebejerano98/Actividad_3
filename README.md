@@ -199,7 +199,8 @@ Al descomprimirlo, contiene un fichero llamado `wokwi-project.txt` que incluye l
 
 Por comodidad, también se puede acceder directamente haciendo clic en el siguiente enlace:
 
-👉 [Abrir simulación en Wokwi](https://wokwi.com/projects/432532572513252353)
+👉 [Abrir simulación en Wokwi Actividad 2](https://wokwi.com/projects/432532572513252353)
+👉 [Abrir simulación en Wokwi Actividad 3](https://wokwi.com/projects/434117026771162113)
 ## Autores
 
 
