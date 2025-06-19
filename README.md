@@ -215,7 +215,7 @@ Se han descrito el funcionamiento para los siguientes botones: Los número 1; 2;
 
 ## Acceso al Proyecto en Wokwi
 
-Dentro del repositorio, en la misma rama **`MAIN`**. En dicha rama se encuentra un archivo empaquetado `.zip` llamado **`Actividad2_entrega`**.
+Dentro del repositorio, en la misma rama **`MAIN`**. Descargamos el archivo **`Actividad3_final.zip`**.
 
 Al descomprimirlo, contiene un fichero llamado `wokwi-project.txt` que incluye la URL para acceder directamente al proyecto en la plataforma de simulación **Wokwi**.
 
