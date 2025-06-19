@@ -12,9 +12,9 @@ Asimismo, se han integrado **dos servomotores** que simulan la **apertura y cier
 ## Sistema montado
 
 
-
-![App Screenshot](https://i.postimg.cc/vmJm9bMs/temp-Image-Oplqal.avif)
-
+<div align="center">
+  <img src="Img/circuito.jpg" alt="Circuito">
+</div>
 
 ## Componentes empleados
 
@@ -189,18 +189,40 @@ El sistema también incluye una **simulación del estado de batería**, cuya car
 
 El porcentaje de batería actual se muestra en una **pantalla OLED**, que aporta un diseño más estético y moderno al sistema.
 
+### Controlador IR de la pantalla LCD I2C _(Actividad 3)_
+
+Se han añadido al proyecto un receptor IR, que sus tres pines están conectado a:
+
+- El pin GND se ha conectado a tierra.
+- El pin VCC se ha conectado a la alimentación de 5 voltios.
+- El pin DAT se ha conectado a al pin 1 digital.
+
+El funcionamiento que hemos descrito para este dispositivo se encuentra en la función `translateIR()` que a su vez está en el archivo **_IRemote.ino_**. El funcionamiento es el siguiente.
+
+Se han descrito el funcionamiento para los siguientes botones: Los número 1; 2; 3 y 4, el botón de power y los botones de adelantar y rebobinar. El funcionamiento de los botones será el siguiente:
+
+- **Los números**: Cada número tiene asignada una pantalla. En el caso del número 1 mostrará la humedad y temperatura interior y exterior, en el caso del número 2 mostrará los datos del viento (velocidad en km/h y la dirección de este), el botón 3 mostrará la calidad del aire y el botón 4 mostrará el la luminosidad de exterior.
+
+- **Botón power**: Al pulsar este botón se apagará pantalla en el caso de que la pantalla estuvierá encendida y en caso contrario si estuviera apagada. La pantalla que se muestra al encenderla es la última que estaba muestrando la pantalla.
+
+- **Botones de adelante y rebobinar**: En este caso si pulsamos el botón de adelante nos llevará a la siguiente pantalla y si pulsamos el botón rebobinar nos llevará a la pantalla anterior. En el caso de hacer una vuelta completa por todas las pantallas nos llevará a la primera pantalla en el caso de la última y habiendo dado al botón adelante y a la última si pulsamos el botón rebobinar desde la primera pantalla.
+
+#### Video mostrando el funcionamiento del receptor IR.
+[Video funcionamiento](Img/funcionamiento.mp4)
+
+
 ---
 
 ## Acceso al Proyecto en Wokwi
 
-Dentro del repositorio, dirigirse a la rama **`ENTREGA`**. En dicha rama se encuentra un archivo empaquetado `.zip` llamado **`Actividad2_entrega`**.
+Dentro del repositorio, en la misma rama **`MAIN`**. En dicha rama se encuentra un archivo empaquetado `.zip` llamado **`Actividad2_entrega`**.
 
 Al descomprimirlo, contiene un fichero llamado `wokwi-project.txt` que incluye la URL para acceder directamente al proyecto en la plataforma de simulación **Wokwi**.
 
 Por comodidad, también se puede acceder directamente haciendo clic en el siguiente enlace:
 
-👉 [Abrir simulación en Wokwi Actividad 2](https://wokwi.com/projects/432532572513252353)
-👉 [Abrir simulación en Wokwi Actividad 3](https://wokwi.com/projects/434117026771162113)
+
+👉 [Abrir simulación en Wokwi](https://wokwi.com/projects/434117026771162113)
 ## Autores
 
 
